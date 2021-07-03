@@ -35,8 +35,10 @@ class HomeBloc extends Bloc<HomeEvent, HomeState> {
     if (event == HomeEvent.UpdateCache) {
       state.trendingSellers =
           await BaseHttp.getTrendingSellers(updateCache: true);
+      yield state.copyWith();
       state.trendingProducts =
           await BaseHttp.getTrendingProducts(updateCache: true);
+      yield state.copyWith();
       state.productStories =
           await BaseHttp.getProductStories(updateCache: true);
       state.newArrivalProducts =
