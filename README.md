@@ -1,6 +1,13 @@
 # audacity_demo
+    - REST API caching 
+    - Pull down to refresh cache
+    - Offline browsing
 
-A new Flutter project.
+# App ScreenShoot
+
+![Alt text](lib/assets/app-screenshoot.jpg?raw=true "Title")
+
+
 
 ## Getting Started
 
