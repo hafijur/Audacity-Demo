@@ -6,7 +6,7 @@ import 'package:flutter/material.dart';
 class ProductCardSmList extends StatelessWidget {
   final String caption;
   final List<Product> products;
-  const ProductCardSmList(this.caption, this.products, {Key key})
+  const ProductCardSmList(this.caption, this.products, {Key? key})
       : super(key: key);
 
   @override
@@ -18,7 +18,7 @@ class ProductCardSmList extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              SectionTitle(caption ?? ''),
+              SectionTitle(caption),
               SizedBox(height: 5),
               Container(
                 height: 150,
@@ -29,9 +29,9 @@ class ProductCardSmList extends StatelessWidget {
                   itemBuilder: (BuildContext ctx, int index) => Container(
                     width: MediaQuery.of(context).size.width / 4,
                     child: ProductCardSm(
-                        products[index].productName,
-                        products[index].shortDetails,
-                        products[index].productImage),
+                        products[index].productName!,
+                        products[index].shortDetails!,
+                        products[index].productImage!),
                   ),
                 ),
               ),

@@ -30,7 +30,7 @@ class BaseHttp {
       return file.readAsStringSync();
     } else if (file.existsSync() && updateCache) {
       log("Updating cache $url From Network");
-      Response response = await get(Uri.encodeFull("$BASE_URL$url"),
+      Response response = await get(Uri.parse("$BASE_URL$url"),
           headers: {"Accept": "application/json"});
 
       file.writeAsStringSync(response.body, flush: true, mode: FileMode.write);
@@ -38,7 +38,7 @@ class BaseHttp {
     } else {
       try {
         log("Reading $url From Network");
-        Response response = await get(Uri.encodeFull("$BASE_URL$url"),
+        Response response = await get(Uri.parse("$BASE_URL$url"),
             headers: {"Accept": "application/json"});
 
         file.writeAsStringSync(response.body,

@@ -1,26 +1,26 @@
 class Seller {
-  String slNo;
-  String sellerName;
-  String sellerProfilePhoto;
-  String sellerItemPhoto;
-  String ezShopName;
-  num defaultPushScore;
+  String? slNo;
+  String? sellerName;
+  String? sellerProfilePhoto;
+  String? sellerItemPhoto;
+  String? ezShopName;
+  num? defaultPushScore;
   dynamic aboutCompany;
-  int allowCOD;
+  int? allowCOD;
   dynamic division;
   dynamic subDivision;
-  String city;
-  String state;
-  String zipcode;
-  String country;
-  String currencyCode;
-  int orderQty;
-  int orderAmount;
-  int salesQty;
-  int salesAmount;
-  int highestDiscountPercent;
-  String lastAddToCart;
-  String lastAddToCartThatSold;
+  String? city;
+  String? state;
+  String? zipcode;
+  String? country;
+  String? currencyCode;
+  int? orderQty;
+  int? orderAmount;
+  int? salesQty;
+  int? salesAmount;
+  int? highestDiscountPercent;
+  String? lastAddToCart;
+  String? lastAddToCartThatSold;
 
   Seller(
       {this.slNo,

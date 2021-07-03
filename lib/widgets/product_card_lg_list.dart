@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 
 class ProductCardLgList extends StatelessWidget {
   final List<ProductStory> productStories;
-  const ProductCardLgList(this.productStories, {Key key}) : super(key: key);
+  const ProductCardLgList(this.productStories, {Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

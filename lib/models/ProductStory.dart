@@ -1,28 +1,28 @@
 class ProductStory {
-  String storyTime;
-  String story;
-  String storyType;
-  String storyImage;
-  String storyAdditionalImages;
-  String promoImage;
-  int orderQty;
-  String lastAddToCart;
-  int availableStock;
-  String myId;
-  String ezShopName;
+  String? storyTime;
+  String? story;
+  String? storyType;
+  String? storyImage;
+  String? storyAdditionalImages;
+  String? promoImage;
+  int? orderQty;
+  String? lastAddToCart;
+  int? availableStock;
+  String? myId;
+  String? ezShopName;
   dynamic companyName;
   dynamic companyLogo;
   dynamic companyEmail;
-  String currencyCode;
-  int unitPrice;
-  int discountAmount;
-  int discountPercent;
-  String iMyID;
-  String shopName;
-  String shopLogo;
-  String shopLink;
-  String friendlyTimeDiff;
-  String slNo;
+  String? currencyCode;
+  int? unitPrice;
+  int? discountAmount;
+  int? discountPercent;
+  String? iMyID;
+  String? shopName;
+  String? shopLogo;
+  String? shopLink;
+  String? friendlyTimeDiff;
+  String? slNo;
 
   ProductStory(
       {this.storyTime,

@@ -26,9 +26,9 @@ class MyApp extends StatelessWidget {
 }
 
 class MyHomePage extends StatefulWidget {
-  MyHomePage({Key key, this.title}) : super(key: key);
+  MyHomePage({Key? key, this.title}) : super(key: key);
 
-  final String title;
+  final String? title;
 
   @override
   _MyHomePageState createState() => _MyHomePageState();
@@ -48,24 +48,24 @@ class _MyHomePageState extends State<MyHomePage> {
     return RefreshIndicator(
       onRefresh: _onRefresh,
       child: BlocBuilder<HomeBloc, HomeState>(
-        cubit: homeBloc,
+        bloc: homeBloc,
         builder: (BuildContext ctx, HomeState state) => Container(
           color: Colors.white,
           child: ListView(
             children: <Widget>[
-              ProductCardMdList("Trending Sellers", state.trendingSellers),
-              ProductCardSmList("Trending Products", state.trendingProducts),
-              if (state.productStories.isNotEmpty) ...[
-                ProductCardLgList(state.productStories.getRange(0, 3).toList())
+              ProductCardMdList("Trending Sellers", state.trendingSellers!),
+              ProductCardSmList("Trending Products", state.trendingProducts!),
+              if (state.productStories!.isNotEmpty) ...[
+                ProductCardLgList(state.productStories!.getRange(0, 3).toList())
               ],
-              ProductCardSmList("New Arrivals", state.newArrivalProducts),
-              if (state.productStories.isNotEmpty) ...[
-                ProductCardLgList(state.productStories.getRange(3, 6).toList())
+              ProductCardSmList("New Arrivals", state.newArrivalProducts!),
+              if (state.productStories!.isNotEmpty) ...[
+                ProductCardLgList(state.productStories!.getRange(3, 6).toList())
               ],
-              ProductCardMdList("New Shops", state.newShops),
+              ProductCardMdList("New Shops", state.newShops!),
               SizedBox(height: 10),
-              if (state.productStories.isNotEmpty)
-                ProductCardLgList(state.productStories),
+              if (state.productStories!.isNotEmpty)
+                ProductCardLgList(state.productStories!),
             ],
           ),
         ),

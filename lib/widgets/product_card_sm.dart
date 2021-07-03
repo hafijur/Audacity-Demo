@@ -5,7 +5,7 @@ class ProductCardSm extends StatelessWidget {
   final String title;
   final String price;
   final String imageUrl;
-  const ProductCardSm(this.title, this.price, this.imageUrl, {Key key})
+  const ProductCardSm(this.title, this.price, this.imageUrl, {Key? key})
       : super(key: key);
 
   @override
@@ -32,7 +32,7 @@ class ProductCardSm extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.all(5),
             child: Text(
-              title ?? '',
+              title,
               overflow: TextOverflow.ellipsis,
               maxLines: 1,
               style: TextStyle(
@@ -44,7 +44,7 @@ class ProductCardSm extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.only(left: 3, right: 3),
             child: Text(
-              price ?? '',
+              price,
               overflow: TextOverflow.ellipsis,
               maxLines: 1,
               style: TextStyle(color: Colors.black, fontSize: 10),

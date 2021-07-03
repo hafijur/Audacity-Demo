@@ -6,7 +6,7 @@ import 'package:flutter/material.dart';
 class ProductCardMdList extends StatelessWidget {
   final String caption;
   final List<Seller> sellers;
-  const ProductCardMdList(this.caption, this.sellers, {Key key})
+  const ProductCardMdList(this.caption, this.sellers, {Key? key})
       : super(key: key);
 
   @override
@@ -18,7 +18,7 @@ class ProductCardMdList extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            SectionTitle(caption ?? ''),
+            SectionTitle(caption),
             SizedBox(height: 5),
             Container(
               height: 150,

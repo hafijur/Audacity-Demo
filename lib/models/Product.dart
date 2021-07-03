@@ -1,23 +1,23 @@
 class Product {
-  String slNo;
-  String productName;
-  String shortDetails;
-  String productDescription;
-  int availableStock;
-  int orderQty;
-  int salesQty;
-  int orderAmount;
-  int salesAmount;
-  int discountPercent;
-  int discountAmount;
-  int unitPrice;
-  String productImage;
-  String sellerName;
-  String sellerProfilePhoto;
-  String sellerCoverPhoto;
-  String ezShopName;
-  num defaultPushScore;
-  String myProductVarId;
+  String? slNo;
+  String? productName;
+  String? shortDetails;
+  String? productDescription;
+  int? availableStock;
+  int? orderQty;
+  int? salesQty;
+  int? orderAmount;
+  int? salesAmount;
+  int? discountPercent;
+  int? discountAmount;
+  int? unitPrice;
+  String? productImage;
+  String? sellerName;
+  String? sellerProfilePhoto;
+  String? sellerCoverPhoto;
+  String? ezShopName;
+  num? defaultPushScore;
+  String? myProductVarId;
 
   Product(
       {this.slNo,
