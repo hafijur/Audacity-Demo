@@ -5,7 +5,7 @@
 
 # App ScreenShoot
 
-![Alt text](lib/assets/app-screenshoot.jpg?raw=true "Title")
+![Alt text](lib/assets/audacity_demo.jpg?raw=true "Title")
 
 
 
